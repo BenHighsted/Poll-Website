@@ -8,11 +8,6 @@
  * As I have been working with similar technologies at my internship, should be pretty
  * easy to just apply what I have been doing to a different project.
  * 
- * Could attempt to make it similar to stockpoll (or whatever its called)
- * but have it so it can display the data in all different formats (like pi charts and such)
- * 
- * Will need to make sure I .gitignore the connect.php file once I have created it.
- * 
  */
 
 ?>
@@ -22,8 +17,8 @@
 <html lang="en">
 
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
         <link rel="stylesheet" href="style/style.css">
         <script type="text/javascript" src="js/index.js"></script>
         <title>Poll Website</title>
@@ -31,6 +26,8 @@
 
     <body>
         <h1> Welcome to 'Poll Website'! </h1>
+
+        <a href="new.php"> Create new Poll </p>
     </body>
 
 </html>
