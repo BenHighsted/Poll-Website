@@ -19,23 +19,7 @@
 
                 <br /><br />
 
-                <?php
-                    $counter = 0;
-
-                    // Creates a new option section with the correlating number (UPDATE THIS TO JAVASCRIPT)
-                    function new_option(&$count){
-                        $count++;
-                        echo "<label for='option".$count."'> Option ".$count.": </label>";
-                        echo "<input type='text' id='option".$count."' name='option".$count."' />";
-                        echo "<br><br>";
-                    }
-
-                    new_option($counter);
-                    new_option($counter);
-                    new_option($counter);
-
-                    //NOTE: Might need to make it so theres a max options number? (e.g. 10?)
-                ?>
+                <div id="option-holder"></div>
 
                 <script>
                     new_option();
@@ -43,8 +27,7 @@
                     new_option();
                 </script>
 
-                <button onclick="new_option();"> -- + -- </button> <!-- Want this to call new_section ; currently it just submits the form. --> 
-                                           <!-- UPDATE: Thinking that this would be much better as a javascript function. Make the transition soon. -->
+                <button onclick="new_option();" type="button"> -- + -- </button> <!-- Want this to call new_section ; currently it just submits the form. --> 
             </form>
         </div>
     </body>
