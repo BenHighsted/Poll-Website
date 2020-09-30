@@ -3,8 +3,6 @@
 <html lang="en">
 
     <head>
-        <!-- <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
         <link rel="stylesheet" href="style/style.css">
         <script type="text/javascript" src="js/index.js"></script>
         <title> New Poll </title>
@@ -12,23 +10,36 @@
 
     <body>    
         <div class="form-wrapper">
+            <h1 class="new-form-title"> New Poll </h1>
             <!-- <form class="create-new-poll" method="POST" action="process-input.php"> -->
             <form>
                 <label for="poll-name"> Poll Name: </label>
+                <br />
                 <input type="text" id="poll-name" name="poll-name" />
 
                 <br /><br />
 
-                <div id="option-holder"></div>
+                <hr>
 
-                <script>
-                    new_option();
-                    new_option();
-                    new_option();
-                </script>
+                <div id="option-holder">
+                    <label for="option1"> Option 1: </label> <br>
+                    <input type="text" id="option1" name="option1"></input>
+                    <br><br>
 
-                <button onclick="new_option();" type="button"> -- + -- </button> <!-- Want this to call new_section ; currently it just submits the form. --> 
+                    <label for="option2"> Option 2: </label> <br>
+                    <input type="text" id="option2" name="option2"></input>
+                    <br><br>
+
+                    <label for="option3"> Option 3: </label> <br>
+                    <input type="text" id="option3" name="option3" oninput="new_option();"></input>
+                    <br><br>
+
+                </div>
+
+                <button type="submit"> Create Poll </button>
+
             </form>
+            <br />
         </div>
     </body>
 </html>
