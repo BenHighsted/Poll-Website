@@ -8,6 +8,14 @@
         <title> New Poll </title>
     </head>
 
+    <header>
+        <h3> Poll Website </h3>
+        <ul>
+            <li> Sign up </li>
+            <li> Log in </li>
+        </ul>
+    </header>
+
     <body>    
         <div class="form-wrapper">
             <h1 class="new-form-title"> New Poll </h1>
@@ -42,4 +50,9 @@
             <br />
         </div>
     </body>
+
+    <footer>
+        <p><i> This website is a Personal Project created by Ben Highsted. </i></p>
+    </footer>
+
 </html>
