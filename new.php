@@ -31,11 +31,11 @@
 
                 <div id="option-holder">
                     <label for="option1"> Option 1: </label> <br>
-                    <input type="text" id="option1" name="option1"></input>
+                    <input type="text" id="option1" name="option1" oninput="new_option();"></input>
                     <br><br>
 
                     <label for="option2"> Option 2: </label> <br>
-                    <input type="text" id="option2" name="option2"></input>
+                    <input type="text" id="option2" name="option2" oninput="new_option();"></input>
                     <br><br>
 
                     <label for="option3"> Option 3: </label> <br>

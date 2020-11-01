@@ -3,6 +3,17 @@
 // A function that creates a new option with a correlating number
 var count = 3;
 function new_option(){
+
+    var all_options_filled = true;
+
+    for (var i = 1; i <= count; i++){
+        if (document.getElementById("option" + i).value == ""){
+            all_options_filled = false;
+            console.log("option not filled");
+            return;
+        }
+    }
+
     document.getElementById("option" + count).oninput = "";
 
     count += 1;
