@@ -9,7 +9,6 @@ function new_option(){
     for (var i = 1; i <= count; i++){
         if (document.getElementById("option" + i).value == ""){
             all_options_filled = false;
-            console.log("option not filled");
             return;
         }
     }

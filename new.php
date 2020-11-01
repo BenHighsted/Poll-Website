@@ -9,7 +9,7 @@
     </head>
 
     <header>
-        <h3> Poll Website </h3>
+        <h3><a href="index.php"> Poll Website </a></h3>
         <ul>
             <li> Sign up </li>
             <li> Log in </li>
